@@ -19,22 +19,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../favicon.ico">
     <title>Introduce Me</title>
-    <!--배경 이미지-->
     <style>
-        body {
-        background-image: url('main.jpg');
-        background-repeat : no-repeat;
-        background-size: 100% 280%;
-      }
-        footer {
-        position:absolute;
-        bottom:0;
-        width:100%;
-        height:70px;
-        text-align: center;
-      }   
-    </style>
+        p, li {white-space:pre}
 
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+    </style>
+    
 </head>
 <body>
     <!--네비게이션 바-->
@@ -54,27 +50,26 @@
               <li><a href="lee.html">Lee</a></li>
               <li><a href="ji.html">ji</a></li>
               <li><a href="yeong.html">Yeong</a></li>
-              <!--V2: 로그인 페이지 추가하였습니다.-->
-              <li><a href="login.html">Log-in</a></li>
+              <li class="active"><a href="login.html">Log-in</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
     </nav>
     <br><br><br><br>
-    <!--메인화면 메세지-->
-    <!--V2: div태그를 section태그와 article태그로 변경하였습니다. -->
+    <!--V2: 로그인 페이지 추가하였습니다.-->
     <section>
-      <article>
-        <h1 class="text-center">Welcome to My blog</h1>
-        <p class="lead" style="text-align:center; color: antiquewhite;">안녕하세요. 한국기술교육대학교 컴퓨터공학부 19학번 이지영 입니다.
-            <br>만나게 되서 반갑습니다!<br> 멋쟁이 사자 9기 활동하면서 웹에 대해 많이 배우고 싶습니다.</p>
-        <p class="text-center">@jye000ng</p>
-      </article>
+        <h1 class="text-center">Log-in</h1>
+        <br><br><br><br>
+    </section>
+    <section>
+        <form name="f1" method="POST" action="#">
+            <ul>
+                <li>ID                  :<input type="text" name="id"></li>
+                <li>PASSWORD: <input type="password" name="pass"></li>
+                <li><input type="submit" value="Login"></li>
+            </ul>
+        </form>
     </section>
     
-    <!--V2: footer를 이용하여 깃허브 주소를 추가하였습니다. -->
-    <footer>
-      <a href="https://github.com/yeongleej" style="color: antiquewhite;">https://github.com/yeongleej</a>
-    </footer>
 </body>
 </html>
